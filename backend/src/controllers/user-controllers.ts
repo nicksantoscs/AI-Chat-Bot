@@ -23,6 +23,7 @@ export const userSignup = async (
     req: Request,
     res: Response,
     next: NextFunction
+
 ) => {
     try {
         // User signup

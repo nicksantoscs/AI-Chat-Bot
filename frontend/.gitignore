@@ -1,3 +1,11 @@
+# Environment variables
+.env*
+
+# Node modules
+node_modules/
+
+constants.js
+
 # Logs
 logs
 *.log
