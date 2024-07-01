@@ -4,7 +4,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: #05101c;
+  background: #1e1e1e;
   color: white;
   font-family: 'Poppins', sans-serif;
 }
@@ -22,3 +22,8 @@ body {
   text-decoration: none;
   letter-spacing: 1px;
 }
+.MuiOutlinedInput-input-root.Mui-focused,
+.MuiOutlinedInput-notchedOutline {
+  color: white !important;
+}
+ 
