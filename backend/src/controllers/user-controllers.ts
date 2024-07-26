@@ -101,10 +101,11 @@ export const verifyUser = async (
       // Check if user token is valid
       const user = await User.findById(res.locals.jwtData.id);
       if (!user) {
-        return res.status(401).send("User not found");
+        return res.status(401).send("User not registered");
       }
+      console.log(user._id.toString(), res.locals.jwtData.id);
       if (user._id.toString() !== res.locals.jwtData.id) {
-        return res.status(401).send("Permission denied");
+        return res.status(401).send("Permissions didn't match");
       }
       return res
         .status(200)
