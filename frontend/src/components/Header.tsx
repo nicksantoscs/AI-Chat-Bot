@@ -42,7 +42,7 @@ const Header = () => {
                 bg="#51538f"
                 textColor="white"
                 to="/signup"
-                text="Signup"
+                text="Register"
               />
             </>
           )}
